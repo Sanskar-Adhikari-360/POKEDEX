@@ -68,7 +68,7 @@ body{
     }
            
       /* ANIME CARD */
-      .anime-card {
+      .pokecard {
         width: 225px;
         height: 150spx;
         border: 1px solid #ccc;
@@ -79,11 +79,11 @@ body{
         transition: transform 0.3s;
       }
       
-      .anime-card:hover {
+      .pokecard:hover {
         transform: translateY(-5px);
       }
       
-      .anime-card img {
+      .pokecard img {
         width: 100%;
         max-height: 200px;
         object-fit: contain;
@@ -91,18 +91,9 @@ body{
         margin-bottom: 10px;
       }
       
-      .anime-card h2 {
+      .pokecard h2 {
         font-size: 20px;
         margin-bottom: 10px;
-      }
-      .anime-card button {
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
       }
 
 
