@@ -121,3 +121,28 @@ body{
             background-color: #575757;
         }
  */
+
+ 
+ .toggle{ 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 40px;
+    cursor:pointer;
+    background: none;
+    border: none;
+ }
+ #moon-icon{
+    rotate: -45deg;
+    scale: 0.7;
+    display: none;
+ }
+ #sun-icon{
+    rotate: -45deg;
+    scale: 0.7;
+    display: block;
+    
+ }
+
+
