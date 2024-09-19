@@ -76,13 +76,13 @@ body{
         border-radius: 5px;
         padding: 20px;
         text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px rgba(175, 164, 164, 0.1);
         transition: transform 0.3s;
       }
-      
-      .pokecard:hover {
+   
+      .pokecard:hover  {
         transform: translateY(-5px);
-      }
+      } 
       
       .pokecard img {
         width: 100%;
@@ -145,4 +145,23 @@ body{
     
  }
 
+ .description{
+    display: none;
+}
 
+
+ .pokecard:hover .description{
+    display: block;
+ }
+
+
+
+       /* THIS CODE IS ABOUT THE DETAILS SECTION OF THE MONS */
+
+    .details-img > img{
+        width: 360px;
+        height: 366px;
+        margin-right: calc(100vw - 20px);
+        margin-left: 20px;
+        }
+        
