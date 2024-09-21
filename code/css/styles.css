@@ -207,9 +207,17 @@ main {
   padding: 20px;
 }
 
-.anime-details {
+.body-content-pokeinfo{
+  margin: 20px;
   border-radius: 16px;
   padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color); 
+}
+
+.poke-details {
+  border-radius: 16px;
+  padding: 20px;
   background-color: var(--primary-color);
   color: var(--text-color);
   display: flex;
@@ -386,3 +394,4 @@ main {
   display: flex;
   flex-direction: column;
 }
+
