@@ -188,31 +188,34 @@ body::-webkit-scrollbar-track {
 
          */
 
+
+
+
+
+         
+         
+         
+         
+         header {
+           background-color: var(--primary-color);
+           color: var(--text-color);
+           padding: 20px;
+           position: relative;
+         }
+            body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+             background-color: var(--secondary-color);
+             
+         }
+
 /* alr now idk  */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--secondary-color);
-}
-
-header {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  padding: 20px;
-  position: relative;
-}
-main {
-  padding: 20px;
-}
 
 .body-content-pokeinfo{
-  margin: 20px;
-  border-radius: 16px;
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: var(--text-color); 
+  display: flex;
+  flex-direction: column;
 }
 
 .poke-details {
@@ -220,10 +223,12 @@ main {
   padding: 20px;
   background-color: var(--primary-color);
   color: var(--text-color);
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 500px;
+  text-align: justify;
 }
 
 .poke-details-image {
@@ -263,7 +268,7 @@ main {
 
 /* CSS styles for Episode List */
 
-.episode-list {
+/* .episode-list {
   margin-top: 20px;
 }
 
@@ -298,12 +303,12 @@ main {
 
 .artwork-link {
   display: inline;
-  margin-left: -285px;
-  margin-top: 350px;
+  margin-left: -415px;
+  margin-top: 285px;
   color: #007bff;
-}
+} */ 
 
-/* To add color effects to type of */
+/* To add color effects to type of stuff like the color hoghlighting in stuff */
 .type-fire {
   display: inline;
   color: #ffc107;
@@ -393,5 +398,7 @@ main {
 .pfp-container {
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
+  width: 800px;
 }
 
