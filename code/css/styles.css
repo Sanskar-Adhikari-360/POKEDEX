@@ -23,19 +23,24 @@ nav {
   display: flex;
   gap: 50px;
 }
-.nav-list > li {
+/* .nav-list > li {
   box-sizing: border-box;
   border-bottom: 2px solid var(--primary-color);
 }
 .nav-list > li:hover {
   color: var(--text-color);
   border-bottom-color: var(--text-color);
+} */
+
+.nav-element{
+  box-sizing: border-box;
+  border-bottom: 2px  solid var(--primary-color);
 }
 
-nav > img {
-  height: 65px;
-  width: 65px;
+.nav-element:hover{
+  border-bottom: 2px solid  var(--text-color);
 }
+
 
 nav > h2 {
   font-size: 24px;
