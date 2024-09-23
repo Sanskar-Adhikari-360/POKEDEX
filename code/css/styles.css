@@ -1,9 +1,9 @@
-:root {
-  --primary-color: #000;
-  --secondary-color: wheat;
+ :root {
+  --primary-color: #2F734F;
+  --secondary-color: #EDEAE5;
   --bg-card: #242222;
-  --text-color: #d9d9d9d9;
-}
+  --text-color: #F7F7F7;
+} 
 
 a {
   text-decoration: none;
@@ -14,12 +14,9 @@ nav {
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 16px;
-  height: 56px;
-  border-radius: 16px;
+  padding: 7px 8px 4px 8px;
+  height: 52px;
   color: var(--text-color);
-  margin: 20px;
 }
 .nav-list {
   list-style: none;
@@ -46,6 +43,19 @@ nav > h2 {
   letter-spacing: 2px;
   text-align: center;
 }
+
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 200 to 1000 */
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200px;
+  font-style: normal;
+}
+
+
 
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
