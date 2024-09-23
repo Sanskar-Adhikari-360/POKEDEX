@@ -1,8 +1,9 @@
  :root {
   --primary-color: #2F734F;
-  --secondary-color: #EDEAE5;
-  --bg-card: #242222;
+  --secondary-color: #EDEAE5; 
+  --bg-card: #E4E0DC;
   --text-color: #F7F7F7;
+  --head-text-color: #2F734F;
 } 
 
 a {
@@ -77,9 +78,13 @@ nav > h2 {
   margin: 20px;
   border-radius: 16px;
   padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: var(--text-color);
+  background-color: var(--bg-card);
   text-align: center;
+  border: 1px solid gray;
+}
+
+.body-content-home >h3{
+  color: var(--head-text-color);
 }
 
 /* WEB SCROLLBAR */
@@ -96,7 +101,6 @@ body::-webkit-scrollbar-track {
   margin: 20px;
   border-radius: 16px;
   padding: 10px 20px;
-  background-color: var(--primary-color);
   color: var(--text-color);
   display: flex;
   flex-direction: row;
@@ -110,7 +114,8 @@ body::-webkit-scrollbar-track {
   padding: 20px;
   margin-bottom: 40px;
   text-align: center;
-  background-color: var(--bg-card);
+  background-color: var(--text-color);
+  color: #000;
   border: 1px solid var(--bg-card);
 }
 
