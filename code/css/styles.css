@@ -85,6 +85,8 @@ nav > h2 {
 
 .body-content-home >h3{
   color: var(--head-text-color);
+  font-size: 24px;
+  font-weight: 100px;
 }
 
 /* WEB SCROLLBAR */
@@ -422,3 +424,34 @@ body::-webkit-scrollbar-track {
   width: 800px;
 }
 
+/* FoR THe cards in homepage*/
+
+.home-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  height: 320px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+.home-cards:hover{
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+.home-cards img{
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  object-fit: contain;
+  width: 500px;
+  padding-left: 5px;   /*idk what is just did with padding but it looks cool lol */
+  padding-right: 5px;
+}
+.home-cards h4{
+  font-size: 24px;
+}
