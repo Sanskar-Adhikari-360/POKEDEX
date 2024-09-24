@@ -109,8 +109,8 @@ body::-webkit-scrollbar-track {
   gap: 20px;
 }
 .pokecard {
-  width: 225px;
-  height: 150spx;
+  width: 102px;
+  height: 102px;
   border-radius: 5px;
   margin-top: 10px;
   padding: 20px;
@@ -118,22 +118,27 @@ body::-webkit-scrollbar-track {
   text-align: center;
   background-color: var(--text-color);
   color: #000;
-  border: 1px solid var(--bg-card);
+  border: 2px solid var(--bg-card);
 }
 
 .pokecard:hover {
-  border-bottom-color: var(--secondary-color);
+  border-bottom-color: var(--primary-color);
 }
 
 .pokecard img {
   width: 100%;
   object-fit: cover;
+  margin-top: -45px;
   /* border-radius: 5px; */
 }
 
-.pokecard h2 {
+.pokecard h4 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.body-content-pokecard-top{
+  float: left;
+  
 }
 
 /* SIDEBAR CSS   not finished */
