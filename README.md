@@ -5,3 +5,5 @@ Websites like [Pokemon DB](https://pokemondb.net/) , [Bulba Garden] (https://bul
 ___
 ### To Do List
 - [ ] Create a database of all the Pokemon in Gen 1
+- [ ] Change the navbar
+- [ ] Add a Pokemon details page
