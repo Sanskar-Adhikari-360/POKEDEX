@@ -455,9 +455,13 @@ body::-webkit-scrollbar-track {
   border-top-right-radius: 0px;
   object-fit: fill;
   width: 500px;
+  height: 100%;
   padding-left: 5px;   /*idk what is just did with padding but it looks cool lol */
   padding-right: 5px;
 }
-.home-cards h4{
-  font-size: 24px;
+.home-cards span{
+  font-size: 28px;
+  font-weight: bold;
+  height: 18px;
+  padding: 5px;
 }
