@@ -127,7 +127,7 @@ body::-webkit-scrollbar-track {
 
 .pokecard img {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   margin-top: -45px;
   /* border-radius: 5px; */
 }
@@ -442,6 +442,7 @@ body::-webkit-scrollbar-track {
   color: var(--text-color);
   border-radius: 16px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .home-cards:hover{
   background-color: var(--text-color);
@@ -452,7 +453,7 @@ body::-webkit-scrollbar-track {
   border-bottom-right-radius: 16px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  object-fit: contain;
+  object-fit: fill;
   width: 500px;
   padding-left: 5px;   /*idk what is just did with padding but it looks cool lol */
   padding-right: 5px;
