@@ -264,77 +264,7 @@ body::-webkit-scrollbar-track {
   object-fit: cover;
   border-radius: 2px;
 }
-
-.info {
-  width: calc(100% - 320px);
-  padding-left: 20px;
-}
-
-.info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.info p {
-  margin-bottom: 10px;
-}
-
-.forum-link {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-}
-.forum-link:hover {
-  transform: translateY(-5px);
-}
-
-/* CSS styles for Episode List */
-
-/* .episode-list {
-  margin-top: 20px;
-}
-
-.episode-list h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.episode-list ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.episode-list li {
-  margin-bottom: 5px;
-}
-
-.episode-list li a {
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 3px;
-  background-color: #eee;
-  transition: background-color 0.3s ease;
-}
-
-.episode-list li a:hover {
-  background-color: #ddd;
-}
-
-.artwork-link {
-  display: inline;
-  margin-left: -415px;
-  margin-top: 285px;
-  color: #007bff;
-} */ 
-
+ 
 /* To add color effects to type of stuff like the color hoghlighting in stuff */
 .type-fire {
   display: inline;
@@ -460,8 +390,6 @@ body::-webkit-scrollbar-track {
   padding-right: 5px;
 }
 .home-cards span{
-  font-size: 28px;
-  font-weight: bold;
-  height: 18px;
-  padding: 5px;
+font-size: 28px;
+font-weight: bold;
 }
