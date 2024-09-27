@@ -437,3 +437,20 @@ font-weight: bold;
   justify-content: center;
   margin-bottom: 20px;
   }
+    .pokemon-image img:hover{
+      transform: scale(1.1);
+      transition: 0.3s;
+      }
+      .pokemon-image img:active{
+        transform: scale(0.9);
+        transition: 0.3s;
+        }
+        .pokemon-image img:focus{
+          transform: scale(1.1);
+          transition: 0.3s;
+          }
+          .pokemon-image img:disabled{
+            transform: scale(0.9);
+            transition: 0.3s;
+            }
+
