@@ -7,4 +7,4 @@ ___
 - [ ] Create a database of all the Pokemon in Gen 1
 - [ ] Change the navbar
 - [ ] Add a Pokemon details page
-- [ ] Get a cofee
+- [ ] Get a cup of cofee
