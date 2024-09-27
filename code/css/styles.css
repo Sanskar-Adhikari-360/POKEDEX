@@ -79,7 +79,6 @@ nav > h2 {
   border-radius: 16px;
   padding: 10px 20px;
   background-color: var(--bg-card);
-  text-align: center;
   border: 1px solid gray;
 }
 
@@ -394,4 +393,35 @@ font-weight: bold;
   display: flex;
   flex-direction: row;
   gap: 140px;
+}
+
+
+/* NOW FINALLY THE CODE FOR POKEMON DETAILS STARTS HERE... */
+.pokemon-details-heading{
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 900px;
+  margin-bottom: 20px;
+  text-align: center;
+  }
+  .details-nav-ul{
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  justify-content: center;
+}
+.details-nav-ul li{
+  font-size: 18px;
+  font-weight: 600;
+  justify-content: center;
+  padding: 10px;
+}
+.details-nav-ul li:hover{
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  border-radius: 10px;
 }
