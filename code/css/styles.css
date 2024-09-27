@@ -259,6 +259,10 @@ body::-webkit-scrollbar-track {
   object-fit: cover;
   border-radius: 2px;
 }
+
+.body-content-home{
+  text-align: center;
+}
  
 /* To add color effects to type of stuff like the color hoghlighting in stuff */
 .type-fire {
@@ -423,6 +427,13 @@ font-weight: bold;
   border-radius: 10px;
 }
 
-.body-content-home{
-  text-align: center;
+.pokemon-image img{
+  width: 250px;
+  height: 250px;
 }
+
+.pokemon-image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  }
