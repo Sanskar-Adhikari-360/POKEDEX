@@ -1,10 +1,10 @@
- :root {
-  --primary-color: #2F734F;
-  --secondary-color: #EDEAE5; 
-  --bg-card: #E4E0DC;
-  --text-color: #F7F7F7;
-  --head-text-color: #2F734F;
-} 
+:root {
+  --primary-color: #2f734f;
+  --secondary-color: #edeae5;
+  --bg-card: #e4e0dc;
+  --text-color: #f7f7f7;
+  --head-text-color: #2f734f;
+}
 
 a {
   text-decoration: none;
@@ -33,15 +33,14 @@ nav {
   border-bottom-color: var(--text-color);
 } */
 
-.nav-element{
+.nav-element {
   box-sizing: border-box;
-  border-bottom: 2px  solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
-.nav-element:hover{
-  border-bottom: 2px solid  var(--text-color);
+.nav-element:hover {
+  border-bottom: 2px solid var(--text-color);
 }
-
 
 nav > h2 {
   font-size: 24px;
@@ -49,7 +48,6 @@ nav > h2 {
   letter-spacing: 2px;
   text-align: center;
 }
-
 
 /* <uniquifier>: Use a unique and descriptive class name
 <weight>: Use a value from 200 to 1000 */
@@ -60,8 +58,6 @@ nav > h2 {
   font-weight: 200px;
   font-style: normal;
 }
-
-
 
 .indie-flower-regular {
   font-family: "Indie Flower", cursive;
@@ -82,7 +78,7 @@ nav > h2 {
   border: 1px solid gray;
 }
 
-.body-content-home >h3{
+.body-content-home > h3 {
   color: var(--head-text-color);
   font-size: 24px;
   font-weight: 100px;
@@ -136,9 +132,8 @@ body::-webkit-scrollbar-track {
   font-size: 20px;
   margin-top: -10px;
 }
-.body-content-pokecard-top{
+.body-content-pokecard-top {
   float: left;
-  
 }
 
 /* SIDEBAR CSS   not finished */
@@ -215,30 +210,20 @@ body::-webkit-scrollbar-track {
 
          */
 
-
-
-
-
-         
-         
-         
-         
-         header {
-           background-color: var(--primary-color);
-           color: var(--text-color);
-           padding: 20px;
-           position: relative;
-         }
-            body {
-             font-family: Arial, sans-serif;
-             margin: 0;
-             padding: 0;
-             background-color: var(--secondary-color);
-             
-         }
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  position: relative;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+}
 
 /* alr now idk  */
-
 
 .poke-details {
   border-radius: 16px;
@@ -260,10 +245,10 @@ body::-webkit-scrollbar-track {
   border-radius: 2px;
 }
 
-.body-content-home{
+.body-content-home {
   text-align: center;
 }
- 
+
 /* To add color effects to type of stuff like the color hoghlighting in stuff */
 .type-fire {
   display: inline;
@@ -469,7 +454,7 @@ body::-webkit-scrollbar-track {
 
 /* FoR THe cards in homepage*/
 
-.home-cards{
+.home-cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -482,38 +467,36 @@ body::-webkit-scrollbar-track {
   margin-bottom: 60px;
   gap: 50px;
 }
-.home-cards:hover{
+.home-cards:hover {
   background-color: var(--text-color);
   color: var(--primary-color);
 }
-.home-cards img{ 
+.home-cards img {
   border-radius: 0px 0px 16px 16px;
   object-fit: fill;
   width: 520px;
   height: 250px;
-  
 }
-.home-cards span{
-font-size: 28px;
-font-weight: bold;
+.home-cards span {
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.home-cards-container{
+.home-cards-container {
   display: flex;
   flex-direction: row;
   gap: 115px;
 }
 
-
 /* NOW FINALLY THE CODE FOR POKEMON DETAILS STARTS HERE... */
-.pokemon-details-heading{
+.pokemon-details-heading {
   color: var(--primary-color);
   font-size: 25px;
   font-weight: 900px;
   margin-bottom: 20px;
   text-align: center;
-  }
-  .details-nav-ul{
+}
+.details-nav-ul {
   list-style: none;
   display: flex;
   gap: 50px;
@@ -522,81 +505,80 @@ font-weight: bold;
   border-radius: 8px;
   justify-content: center;
 }
-.details-nav-ul li{
+.details-nav-ul li {
   font-size: 18px;
   font-weight: 600;
   justify-content: center;
   padding: 10px;
 }
-.details-nav-ul li:hover{
+.details-nav-ul li:hover {
   background-color: var(--text-color);
   color: var(--primary-color);
   cursor: pointer;
   border-radius: 10px;
 }
 
-.pokemon-image img{
+.pokemon-image img {
   width: 250px;
   height: 250px;
 }
 
-.pokemon-image{
+.pokemon-image {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  }
-    .pokemon-image img:hover{
-      transform: scale(1.1);
-      transition: 0.3s;
-      }
-      .pokemon-image img:active{
-        transform: scale(0.9);
-        transition: 0.3s;
-        }
-        .pokemon-image img:focus{
-          transform: scale(1.1);
-          transition: 0.3s;
-          }
-          .pokemon-image img:disabled{
-            transform: scale(0.9);
-            transition: 0.3s;
-            }
+}
+.pokemon-image img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.pokemon-image img:active {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+.pokemon-image img:focus {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.pokemon-image img:disabled {
+  transform: scale(0.9);
+  transition: 0.3s;
+}
 
-            .pokemon-info-grid{
-              display: grid;
-              grid-template-areas: 
-                          "pkmn-pics    pkmn-info   pkmn-info"
-                          "null         pkmn-info   pkmn-info"
-                          "pkmn-stats   pkmn-stats  pkmn-stats"
-                          "pkmn-evo     pkmn-evo    pkmn-evo"
-                          "dex-entries  dex-entries dex-entries"
-                          "move-set     move-set    move-set"
-                          "pkmn-location pkmn-location pkmn-location";
-                          gap: 0px 25px;
-            }
+.pokemon-info-grid {
+  display: grid;
+  grid-template-areas:
+    "pkmn-pics    pkmn-info   pkmn-info"
+    "null         pkmn-info   pkmn-info"
+    "pkmn-stats   pkmn-stats  pkmn-stats"
+    "pkmn-evo     pkmn-evo    pkmn-evo"
+    "dex-entries  dex-entries dex-entries"
+    "move-set     move-set    move-set"
+    "pkmn-location pkmn-location pkmn-location";
+  gap: 0px 25px;
+}
 
-            .pokemon-image{
-              grid-area: pkmn-pics;
-            }
-            .pokemon-info{
-              grid-area: pkmn-info;
-              }
-              .pokemon-stats{
-                grid-area: pkmn-stats;
-              }
-              .pokemon-evolution{
-                grid-area: pkmn-evo;
-                }
-                .pokemon-dex-entries{
-                  grid-area: dex-entries;
-                  }
-                  .pokemon-move-set{
-                    grid-area: move-set;
-                    }
-                    .pokemon-location{
-                      grid-area: pkmn-location;
-                      }
-                      .null-grid{
-                        grid-area: null;
-                      }
-                      
+.pokemon-image {
+  grid-area: pkmn-pics;
+}
+.pokemon-info {
+  grid-area: pkmn-info;
+}
+.pokemon-stats {
+  grid-area: pkmn-stats;
+}
+.pokemon-evolution {
+  grid-area: pkmn-evo;
+}
+.pokemon-dex-entries {
+  grid-area: dex-entries;
+}
+.pokemon-move-set {
+  grid-area: move-set;
+}
+.pokemon-location {
+  grid-area: pkmn-location;
+}
+.null-grid {
+  grid-area: null;
+}
