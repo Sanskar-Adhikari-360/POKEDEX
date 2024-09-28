@@ -464,7 +464,7 @@ font-weight: bold;
                           "dex-entries  dex-entries dex-entries"
                           "move-set     move-set    move-set"
                           "pkmn-location pkmn-location pkmn-location";
-                          gap: 0px 50px;
+                          gap: 0px 25px;
             }
 
             .pokemon-image{
