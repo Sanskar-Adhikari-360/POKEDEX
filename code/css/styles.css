@@ -136,28 +136,6 @@ body::-webkit-scrollbar-track {
   float: left;
 }
 
-/* SIDEBAR CSS   not finished */
-/* .sidebar{
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: -35px;
-            background-color: #111;
-            padding-top: 20px;
-            display: none;
-        }
-        .sidebar a{
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-        }
-        .sidebar a:hover{
-            background-color: #575757;
-        }
- */
 
 .toggle {
   align-items: center;
@@ -179,36 +157,6 @@ body::-webkit-scrollbar-track {
   scale: 0.7;
   display: block;
 }
-
-/* THIS CODE IS ABOUT THE DETAILS SECTION OF THE MONS */
-/* 
-    .details-description{
-        display: inline-block;
-    }
-
-    .details-text{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-
-    .details-img > img {
-        width: 360px;
-        height: 366px;
-        margin-right: calc(100vw - 20px);
-        margin-left: 20px;
-        border: 1px solid #d9d9d9d9;
-        object-fit: cover;
-        }
-        .alt-text{
-            width: 360px;
-            height: 366px;
-            margin-right: calc(100vw - 20px);
-            margin-left: 20px;
-        }
-
-         */
 
 header {
   background-color: var(--primary-color);
