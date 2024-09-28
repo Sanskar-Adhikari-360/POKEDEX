@@ -393,7 +393,7 @@ font-weight: bold;
 .home-cards-container{
   display: flex;
   flex-direction: row;
-  gap: 140px;
+  gap: 115px;
 }
 
 
@@ -454,3 +454,37 @@ font-weight: bold;
             transition: 0.3s;
             }
 
+            .pokemon-info-grid{
+              display: grid;
+              grid-template-areas: 
+                          "pkmn-pics    pkmn-info   pkmn-info"
+                          "null         pkmn-info   pkmn-info"
+                          "pkmn-stats   pkmn-stats  pkmn-stats"
+                          "pkmn-evo     pkmn-evo    pkmn-evo"
+                          "dex-entries  dex-entries dex-entries"
+                          "move-set     move-set    move-set"
+                          "pkmn-location pkmn-location pkmn-location";
+            }
+
+            .pokemon-image{
+              grid-area: pkmn-pics;
+            }
+            .pokemon-info{
+              grid-area: pkmn-info;
+              }
+              .pokemon-stats{
+                grid-area: pkmn-stats;
+              }
+              .pokemon-evolution{
+                grid-area: pkmn-evo;
+                }
+                .pokemon-dex-entries{
+                  grid-area: dex-entries;
+                  }
+                  .pokemon-move-set{
+                    grid-area: move-set;
+                    }
+                    .pokemon-location{
+                      grid-area: pkmn-location;
+                      }
+                      
