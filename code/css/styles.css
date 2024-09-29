@@ -4,6 +4,7 @@
   --bg-card: #e4e0dc;
   --text-color: #f7f7f7;
   --head-text-color: #2f734f;
+  --highlight-text-color: #191F38;
 }
 
 a {
@@ -205,8 +206,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-water {
   display: inline;
@@ -215,8 +218,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-electric {
   display: inline;
@@ -225,8 +230,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-grass {
   display: inline;
@@ -235,8 +242,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-poison {
   display: inline;
@@ -245,8 +254,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-ground {
   display: inline;
@@ -255,8 +266,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-flying {
   display: inline;
@@ -265,8 +278,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-psychic {
   display: inline;
@@ -275,8 +290,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-ghost {
   display: inline;
@@ -285,8 +302,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-bug {
   display: inline;
@@ -295,8 +314,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-steel {
   display: inline;
@@ -305,8 +326,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-fairy {
   display: inline;
@@ -315,8 +338,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-dark {
   display: inline;
@@ -325,8 +350,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-dragon {
   display: inline;
@@ -335,8 +362,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-fighting {
   display: inline;
@@ -355,8 +384,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-normal {
   display: inline;
@@ -365,8 +396,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 .type-rock {
   display: inline;
@@ -375,8 +408,10 @@ body {
   justify-content: center;
   padding-left: 2px;
   padding-right: 2px;
-  padding-top: 2px;
   margin: 5px;
+  color: var(--text-color);
+  font-size: 24px;
+  border-radius: 16px;
 }
 
 /* About section */
@@ -437,4 +472,36 @@ body {
 }
 
 /* NOW FINALLY THE CODE FOR POKEMON DETAILS STARTS HERE... */
-
+        .body-content-details-container{
+          display: grid;
+          grid-template-areas: 
+                                "head-name-mons                       head-name-mons                        head-name-mons"
+                                "body-content-details-body-pic        body-content-details-right            body-content-details-right"
+                                "body-content-details-body            body-content-details-right            body-content-details-right";
+        }
+          .head-name-mons{
+            grid-area: head-name-mons;
+          }
+          .body-content-details-body{
+            grid-area: body-content-details-body;
+            }
+            .body-content-details-right{
+              grid-area: body-content-details-right;
+              }
+              .head-name-mons{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 45px;
+                font-size: 24px;
+              }
+              .body-content-details-body-pic img{
+                width: 300px;
+                height: 300px;
+              }
+              .body-content-details-right{
+                background-color: var(--secondary-color);
+                border-radius: 24px 0px 0px 24px;
+                box-shadow: 0px 2px 2px 0px #000;
+                margin-right: -100px;
+                margin-left: -200px;
+              }
