@@ -478,7 +478,10 @@ body {
                                 "head-name-mons                       head-name-mons                        head-name-mons"
                                 "body-content-details-body-pic        body-content-details-right            body-content-details-right"
                                 "body-content-details-body            body-content-details-right            body-content-details-right";
-        }
+                              
+                                grid-template-columns: 1fr 1fr 1fr;
+                                
+                              }
           .head-name-mons{
             grid-area: head-name-mons;
           }
@@ -502,6 +505,4 @@ body {
                 background-color: var(--secondary-color);
                 border-radius: 24px 0px 0px 24px;
                 box-shadow: 0px 2px 2px 0px #000;
-                margin-right: -100px;
-                margin-left: -200px;
               }
