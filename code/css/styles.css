@@ -491,6 +491,23 @@ body {
             .body-content-details-right{
               grid-area: body-content-details-right;
               }
+
+              /* alr so from here i will be using grid for .body-content-details-right */
+/* 
+              .body-content-details-right{
+                display: grid;
+                grid-template-areas: 
+                                      "stat                                     stat                                    stat"
+                                      "stat                                     stat                                    stat"
+                                      "body-content-details-right-more-details  body-content-details-right-more-details body-content-details-right-more-details";
+              }
+              .stat{
+                grid-area: stat;
+              }
+              .body-content-details-right-more-details{
+                grid-area: body-content-details-right-more-details;
+              } */
+
               .head-name-mons{
                 display: flex;
                 justify-content: space-between;
@@ -505,4 +522,34 @@ body {
                 background-color: var(--secondary-color);
                 border-radius: 24px 0px 0px 24px;
                 box-shadow: 0px 2px 2px 0px #000;
+                padding: 15px;
               }
+
+              /* ok so from here starts the code FOr stats bar of the detAILS paGE hehe */
+              .stat{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+              }
+              .stat label{
+                width: 100px;
+              }
+              .stat-bar{
+                width: 200px;
+                height: 10px;
+                background-color: #e0e0e0;
+                border-radius: 5px;
+                margin: 0 10px;
+                overflow: hidden;
+              }
+              .stat-fill{
+                height: 100%;
+                background-color: #202225;
+                border-radius: 5px;
+              }
+              .stat span{
+                width: 40px;
+              }
+
+
+
