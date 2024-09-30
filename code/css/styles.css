@@ -400,5 +400,21 @@ body {
 }
 .stat-info {
   display: flex;
-  gap: calc(200px - 45px);
+  gap: 45px;
 }
+
+.body-content-details-right{
+  display: grid;
+  grid-template-areas: 
+                        "base-stats     max-stats"
+                        "more-details   more-details";
+}
+.base-stat {
+  grid-area: base-stats;
+}
+.max-stat {
+  grid-area: max-stats;
+  }
+  .body-content-details-right-more-details {
+    grid-area: more-details;
+    }
