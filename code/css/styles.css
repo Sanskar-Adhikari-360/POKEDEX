@@ -400,5 +400,5 @@ body {
 }
 .stat-info {
   display: flex;
-  gap: 200px;
+  gap: calc(200px - 45px);
 }
