@@ -435,7 +435,7 @@ body {
      color: #9ea3a8;
       border-bottom: 2px solid transparent;
     }
-    .defense-tag{
+    /* .defense-tag{
       display: flex;
       justify-content: space-evenly;
     }
@@ -446,5 +446,69 @@ body {
       margin-left: 55px;
       margin-bottom: -3px;
       font-weight: bold;
+    } */
+    .defense-row{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .defense-tag{
+      border-radius: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      color: var(--text-color);
+      font-weight: bold;
+      text-align: center;
+      min-width: 120px;
+      flex: 1;
+      position: relative;
+    }
+    .defense-multiplier{
+      font-size: 1.1em;
+      background-color: rgb(0, 0, 0, 0.15);
+      padding: 2px 8px;
+      border-radius: 15px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .defense-tag{
+      flex-grow: 1;
+    }
+    .defense-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
     
+    .defense-type {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      min-width: 120px;  /* Increased to accommodate both the multiplier and type */
+      flex: 1;
+      position: relative;
+    }
+    
+    .multiplier {
+      font-size: 1.1em;
+      background-color: rgba(0, 0, 0, 0.15);
+      padding: 2px 8px;
+      border-radius: 15px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    
+    .type {
+      flex-grow: 1;
+    }
+    .defense-section{
+      margin-bottom: 20px;
+
+    }
