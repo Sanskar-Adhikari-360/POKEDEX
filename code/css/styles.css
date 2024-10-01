@@ -511,3 +511,7 @@ body {
 .defense-section {
   margin-bottom: 20px;
 }
+.dex-entries-section table tr th span{
+  display: flex;
+  margin: 0 15px;
+}
