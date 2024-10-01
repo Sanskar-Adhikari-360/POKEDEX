@@ -435,4 +435,16 @@ body {
      color: #9ea3a8;
       border-bottom: 2px solid transparent;
     }
-
+    .defense-tag{
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .defense-multiplier {
+      list-style: none;
+      display: flex;
+      gap: 125px;
+      margin-left: 55px;
+      margin-bottom: -3px;
+      font-weight: bold;
+    }
+    
