@@ -428,11 +428,11 @@ body {
       border-bottom: 2px solid #e0e0e0;
     }
     .body-content-details-right-more-details-nav li:hover{
-     
-      border-bottom: 2px  solid #202225;
+      color: #202225;
+      border-bottom-color: #202225;
     }
     .body-content-details-right-more-details-nav li{
-     
-      border-bottom: 1px  solid #e0e0e0;
+     color: #e0e0e0;
+      border-bottom: 2px solid transparent;
     }
 
