@@ -420,7 +420,7 @@ body {
   flex-direction: row;
   gap: 115px;
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 830px) {
  .home-cards-container{
   display: flex;
   flex-wrap: wrap;
@@ -443,6 +443,7 @@ body {
     "body-content-details-body                    body-content-details-right                    body-content-details-right";
 
   grid-template-columns: 1fr 1fr 1fr;
+  
 }
 .head-name-mons {
   grid-area: head-name-mons;
@@ -452,6 +453,33 @@ body {
 }
 .body-content-details-right {
   grid-area: body-content-details-right;
+}
+
+
+@media only screen and (max-width: 830px) {
+  .body-content-details-body-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+ 
+  .body-content-details-right{
+    background-color: var(--bg-card);
+    border-radius: 24px 0px 0px 24px;
+    box-shadow: 0px 0x 2px 0px #000;
+    padding: 15px;
+    margin-right: -19px;  
+  }
+  .body-content-details-body-container{
+    width: 100%;
+    
+  }
+  .body-content-details-body-pic  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .head-name-mons {
@@ -467,12 +495,30 @@ body {
 .body-content-details-right {
   background-color: var(--secondary-color);
   border-radius: 24px 0px 0px 24px;
+  padding: 0px;
+  margin-top: 15px;
+  margin-right: -19px;
   box-shadow: 0px 0x 2px 0px #000;
   padding: 15px;
-  margin-right: -19px;
 }
 
+@media only screen and  (max-width: 560px) {
+  .whole-stats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+   }
+}
+
+
 /* ok so from here starts the code FOr stats bar of the detAILS paGE hehe */
+.whole-stats{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+ }
+
 .stat {
   display: flex;
   flex-direction: column;
@@ -520,7 +566,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: bold;
   border-bottom: 2px solid #e0e0e0;
 }

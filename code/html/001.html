@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- The layout of this page has been inspired by https://dribbble.com/shots/14972001-001-Bulbasaur made by Brett Simons and published on dribbble -->
+  <!-- ►  ◄  ▼ ▲     SOME USEFULL STUFF-->
   <head>
-    <!-- The layout of this page has been inspired by https://dribbble.com/shots/14972001-001-Bulbasaur made by Brett Simons and published on dribbble -->
-    <!-- ►  ◄  ▼ ▲     SOME USEFULL STUFF-->
     <div class="fonts">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,13 +10,41 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet"
       />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close"
+      />
     </div>
     <link rel="stylesheet" href="/code/css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>POKEDEX</title>
-    <div>
-      <nav>
+    <div class="backdrop hidden"></div>
+    <nav class="nav-modal hidden">
+      <button class="close-nav-btn">
+        <span class="material-symbols-outlined"> close </span>
+      </button>
+      <ul class="nav-modal-list">
+        <li>
+          <a href="/code/html/home.html"
+            ><h2 class="nunito nav-element">HOME</h2></a
+          >
+        </li>
+        <li>
+          <a href="/code/html/pokedex.html"
+            ><h2 class="nunito nav-element">POKEDEX</h2></a
+          >
+        </li>
+        <li>
+          <a href="/code/html/about.html"
+            ><h2 class="nunito nav-element">ABOUT</h2></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-container">
+      <nav class="nav-base">
+        <button class="nav-btn">≡</button>
         <ul class="nav-list">
           <li>
             <a href="/code/html/home.html"
@@ -36,15 +64,41 @@
         </ul>
         <select id="musicDropdown" onchange="playMusic()">
           <option value="">No Music</option>
-          <option value="/assets/audio/Pokemon- Heart Gold and Soul Silver- Route 1- Music.mp3">Route 1 (HSGG)</option>
-          <option value="/assets/audio/Pokemon HGSS Music - Vermillion City.mp3">Vermelion City (HSGG)</option>
-          <option value="/assets/audio/Pokemon FireRedLeafGreen- Surf Theme.mp3">Surf Theme (FR/LG)</option>
-          <option value="/assets/audio/Pokemon FireRedLeafGreen- S.S. Anne.mp3">S.S Anne  (FR/LG)</option>
-          <option value="/assets/audio/Pokemon FireRedLeafGreen- Cinnabar Island.mp3">Cinnabar Island (FR/LG)</option>
-          <option value="/assets/audio/Lavender Town (Original Japanese Version from Pokemon Red and Green).mp3">Lavender Town (R/G)</option>
-          <option value="/assets/audio/Pokémon Diamond, Pearl & Platinum - Champion Cynthia Battle Music (HQ).mp3">Cynthia's Piano (D/P)</option>
-      </select>
-      <audio id="backgroundMusic" controls hidden></audio>
+          <option
+            value="/assets/audio/Pokemon- Heart Gold and Soul Silver- Route 1- Music.mp3"
+          >
+            Route 1 (HSGG)
+          </option>
+          <option
+            value="/assets/audio/Pokemon HGSS Music - Vermillion City.mp3"
+          >
+            Vermelion City (HSGG)
+          </option>
+          <option
+            value="/assets/audio/Pokemon FireRedLeafGreen- Surf Theme.mp3"
+          >
+            Surf Theme (FR/LG)
+          </option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- S.S. Anne.mp3">
+            S.S Anne (FR/LG)
+          </option>
+          <option
+            value="/assets/audio/Pokemon FireRedLeafGreen- Cinnabar Island.mp3"
+          >
+            Cinnabar Island (FR/LG)
+          </option>
+          <option
+            value="/assets/audio/Lavender Town (Original Japanese Version from Pokemon Red and Green).mp3"
+          >
+            Lavender Town (R/G)
+          </option>
+          <option
+            value="/assets/audio/Pokémon Diamond, Pearl & Platinum - Champion Cynthia Battle Music (HQ).mp3"
+          >
+            Cynthia's Piano (D/P)
+          </option>
+        </select>
+        <audio id="backgroundMusic" controls hidden></audio>
       </nav>
     </div>
   </head>
@@ -52,195 +106,221 @@
     <div class="body-content-details body-content">
       <div class="body-content-details-container">
         <div class="head-name-mons nunito">
-          <div class="left-name"><a href="151.html"><b>◄ </b> 151 <b>Mew</b></a></div>
+          <div class="left-name">
+            <a href="151.html"><b>◄ </b> 151 <b>Mew</b></a>
+          </div>
           <div class="middle-name"><b>Kanto Pokedex</b></div>
-          <div class="right-name"><a href="/code/html/002.html">002 <b>Ivysaur ►</b></a></div>
+          <div class="right-name">
+            <a href="/code/html/002.html">002 <b>Ivysaur ►</b></a>
+          </div>
         </div>
         <div class="body-content-details-body-container">
-        <div class="body-content-details-body">
-          
-          <div class="body-content-details-body-pic">
-            <img src="/assets/images/01.png" />
+          <div class="body-content-details-body">
+            <div class="body-content-details-body-pic">
+              <img src="/assets/images/01.png" />
+            </div>
+            <table class="body-content-details-body-mon-info">
+              <tr>
+                <th><b>Name:</b></th>
+                <td>Bulbasaur</td>
+              </tr>
+              <tr>
+                <th><b>Type:</b></th>
+                <td>
+                  <div class="tag tag-grass nunito">Grass</div>
+                  <div class="tag tag-poison nunito">Poison</div>
+                </td>
+              </tr>
+              <br />
+              <tr>
+                <th><b>Height:</b></th>
+                <td>2' 04"</td>
+              </tr>
+              <br />
+              <tr>
+                <th><b>Weight:</b></th>
+                <td>15.2 lbs</td>
+              </tr>
+              <br />
+              <tr>
+                <th><b>Evolve:</b></th>
+                <td>Level 16</td>
+              </tr>
+              <tr>
+                <th><b>Summary</b></th>
+                <td>
+                  Bulbasaur can be seen napping in bright sunlight. There is a
+                  seed on its back. By soaking up the sun's rays, the seed grows
+                  progressively larger.
+                </td>
+              </tr>
+            </table>
           </div>
-          <table class="body-content-details-body-mon-info">
-            <tr>
-              <th><b>Name:</b></th>
-              <td>
-                Bulbasaur
-              </td>
-            </tr>
-            <tr>
-              <th><b>Type:</b></th>
-              <td>
-                <div class="tag tag-grass nunito">Grass</div>
-                <div class="tag tag-poison nunito">Poison</div>
-              </td>
-            </tr>
-            <br />
-            <tr>
-              <th><b>Height:</b></th>
-              <td>2' 04"</td>
-            </tr>
-            <br />
-            <tr>
-              <th><b>Weight:</b></th>
-              <td>15.2 lbs</td>
-            </tr>
-            <br />
-            <tr>
-              <th><b>Evolve:</b></th>
-              <td>Level 16</td>
-            </tr>
-            <tr>
-              <th><b>Summary</b></th>
-              <td>
-                Bulbasaur can be seen napping in bright sunlight. There is a
-                seed on its back. By soaking up the sun's rays, the seed grows
-                progressively larger.
-              </td>
-            </tr>
-          </table>
-        </div>
-        <div class="body-content-details-right">
-          <div class="base-stats">
-            <b class="nunito">Base Stats</b>
-            <br />
-            Total (318)
-            <br />
-            <br />
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">HP : <b class="stat-value">45</b></div>
+          <div class="body-content-details-right">
+            <div class="whole-stats">
+              <div class="base-stats">
+                <b class="nunito">Base Stats</b>
+                <br />
+                Total (318)
+                <br />
+                <br />
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      HP : <b class="stat-value">45</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 45px"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Attack : <b class="stat-value">49</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 49px"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Defense : <b class="stat-value">49</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 49px"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Special Attack : <b class="stat-value">65</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 65px"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Special Defense <b class="stat-value">65</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 65px"></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Speed <b class="stat-value">45</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div class="stat-fill" style="width: 45px"></div>
+                  </div>
+                </div>
               </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 45px"></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Attack : <b class="stat-value">49</b></div>
-              </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 49px"></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Defense : <b class="stat-value">49</b></div>
-                
-              </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 49px"></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Special Attack : <b class="stat-value">65</b></div>
-              </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 65px"></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Special Defense <b class="stat-value">65</b></div>
-              </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 65px"></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Speed <b class="stat-value">45</b></div>
-              </div>
-              <div class="stat-bar">
-                <div class="stat-fill" style="width: 45px"></div>
-              </div>
-            </div>
-          </div>
 
-          <div class="max-stats">
-            <b class="nunito">Max Stats</b>
-            <br />
-            Level 100
-            <br />
-            <br />
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">HP : <b class="stat-value">294</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(294 / 350 * 100%)"
-                ></div>
+              <div class="max-stats">
+                <b class="nunito">Max Stats</b>
+                <br />
+                Level 100
+                <br />
+                <br />
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      HP : <b class="stat-value">294</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(294 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Attack : <b class="stat-value">216</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(216 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Defense : <b class="stat-value">216</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(216 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Special Attack : <b class="stat-value">251</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(251 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Special Defense : <b class="stat-value">251</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(251 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="stat">
+                  <div class="stat-info">
+                    <div class="stat-name">
+                      Speed : <b class="stat-value">207</b>
+                    </div>
+                  </div>
+                  <div class="stat-bar">
+                    <div
+                      class="stat-fill"
+                      style="width: calc(207 / 350 * 100%)"
+                    ></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Attack : <b class="stat-value">216</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(216 / 350 * 100%)"
-                ></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Defense : <b class="stat-value">216</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(216 / 350 * 100%)"
-                ></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Special Attack : <b class="stat-value">251</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(251 / 350 * 100%)"
-                ></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Special Defense : <b class="stat-value">251</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(251 / 350 * 100%)"
-                ></div>
-              </div>
-            </div>
-            <div class="stat">
-              <div class="stat-info">
-                <div class="stat-name">Speed : <b class="stat-value">207</b></div>
-              </div>
-              <div class="stat-bar">
-                <div
-                  class="stat-fill"
-                  style="width: calc(207 / 350 * 100%)"
-                ></div>
-              </div>
-            </div>
-          </div>
 
-          <div class="body-content-details-right-more-details">
-            <ul class="body-content-details-right-more-details-nav">
-              <li>Strong Defense</li>
-              <li>Weak Defense</li>
-              <li>Dex entries</li>
-            </ul>
-            <div class="body-content-details-right-more-details-defense">
-              <!-- <b class="nunito">Strong Defense</b>2
+            <div class="body-content-details-right-more-details">
+              <ul class="body-content-details-right-more-details-nav">
+                <li>Strong Defense</li>
+                <li>Weak Defense</li>
+                <li>Dex entries</li>
+              </ul>
+              <div class="body-content-details-right-more-details-defense">
+                <!-- <b class="nunito">Strong Defense</b>2
               <p>Types not efeective against Bulbasaur</p>
               <div>
                   <ul class="defense-multiplier">
@@ -275,86 +355,87 @@
                 <div class="tag tag-flying nunito">Flying</div>
                 <div class="tag tag-psychic nunito">Psychic</div>
               </div> -->
-              <div class="defense-section" id="defense-section">
-                <b class="nunito">Strong Defense</b>
-                <p>Types 'not very effective' against Bulbasaur</p>
-                <div class="defense-row">
-                  <div class="defense-type tag-water">
-                    <span class="multiplier">1/2</span>
-                    <span class="type">Water</span>
-                  </div>
-                  <div class="defense-type tag-electric">
-                    <span class="multiplier">1/2</span>
-                    <span class="type">Electric</span>
-                  </div>
-                  <div class="defense-type tag-fighting">
-                    <span class="multiplier">1/2</span>
-                    <span class="type">Fighting</span>
-                  </div>
-                  <div class="defense-type tag-fairy">
-                    <span class="multiplier">1/2</span>
-                    <span class="type">Fairy</span>
-                  </div>
-                  <div class="defense-type tag-grass">
-                    <span class="multiplier">1/4</span>
-                    <span class="type">Grass</span>
-                  </div>
-                </div>
-                <br /><br />
-                <div class="defense-section">
-                  <b class="nunito">Weak Defense</b>
-                  <p>Types 'super effective' against Bulbasaur</p>
+                <div class="defense-section" id="defense-section">
+                  <b class="nunito">Strong Defense</b>
+                  <p>Types 'not very effective' against Bulbasaur</p>
                   <div class="defense-row">
-                    <div class="defense-type tag-fire">
-                      <span class="multiplier">x2</span>
-                      <span class="type">Fire</span>
+                    <div class="defense-type tag-water">
+                      <span class="multiplier">1/2</span>
+                      <span class="type">Water</span>
                     </div>
-                    <div class="defense-type tag-ice">
-                      <span class="multiplier">x2</span>
-                      <span class="type">Ice</span>
+                    <div class="defense-type tag-electric">
+                      <span class="multiplier">1/2</span>
+                      <span class="type">Electric</span>
                     </div>
-                    <div class="defense-type tag-flying">
-                      <span class="multiplier">x2</span>
-                      <span class="type">Flying</span>
+                    <div class="defense-type tag-fighting">
+                      <span class="multiplier">1/2</span>
+                      <span class="type">Fighting</span>
                     </div>
-                    <div class="defense-type tag-psychic">
-                      <span class="multiplier">x2</span>
-                      <span class="type">Psychic</span>
+                    <div class="defense-type tag-fairy">
+                      <span class="multiplier">1/2</span>
+                      <span class="type">Fairy</span>
+                    </div>
+                    <div class="defense-type tag-grass">
+                      <span class="multiplier">1/4</span>
+                      <span class="type">Grass</span>
+                    </div>
+                  </div>
+                  <br /><br />
+                  <div class="defense-section">
+                    <b class="nunito">Weak Defense</b>
+                    <p>Types 'super effective' against Bulbasaur</p>
+                    <div class="defense-row">
+                      <div class="defense-type tag-fire">
+                        <span class="multiplier">x2</span>
+                        <span class="type">Fire</span>
+                      </div>
+                      <div class="defense-type tag-ice">
+                        <span class="multiplier">x2</span>
+                        <span class="type">Ice</span>
+                      </div>
+                      <div class="defense-type tag-flying">
+                        <span class="multiplier">x2</span>
+                        <span class="type">Flying</span>
+                      </div>
+                      <div class="defense-type tag-psychic">
+                        <span class="multiplier">x2</span>
+                        <span class="type">Psychic</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="dex-entries-section">
-                <table>
-                <tr>
-                  <th>
-                    <span style="color: #e62829;">Red</span>
-                    <span  style="color: #2980ef;">Blue</span>
-                  </th>
-                  <td>
-                    A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.
-                  </td>
-                </tr>
-                <tr>
-                  <th>
-                    <span style="color: #fac000;">Yellow</span>
-                  </th>
-                  <td>
-                    It can go for days without eating a single morsel. In the bulb on its back, it stores energy.
-                  </td>
-                </tr>
-                </table>
+                <div class="dex-entries-section">
+                  <table>
+                    <tr>
+                      <th>
+                        <span style="color: #e62829">Red</span>
+                        <span style="color: #2980ef">Blue</span>
+                      </th>
+                      <td>
+                        A strange seed was planted on its back at birth. The
+                        plant sprouts and grows with this POKéMON.
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>
+                        <span style="color: #fac000">Yellow</span>
+                      </th>
+                      <td>
+                        It can go for days without eating a single morsel. In
+                        the bulb on its back, it stores energy.
+                      </td>
+                    </tr>
+                  </table>
+                </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
-      </div>
     </div>
     <script src="/code/js/more-info.js"></script>
     <script src="/code/js/background-music.js"></script>
-
+    <script src="/code/js/sidebar.js"></script>
   </body>
 </html>
