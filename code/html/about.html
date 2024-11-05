@@ -35,6 +35,17 @@
               >
             </li>
           </ul>
+          <select id="musicDropdown" onchange="playMusic()">
+            <option value="">No Music</option>
+            <option value="/assets/audio/Pokemon- Heart Gold and Soul Silver- Route 1- Music.mp3">Route 1 (HSGG)</option>
+            <option value="/assets/audio/Pokemon HGSS Music - Vermillion City.mp3">Vermelion City (HSGG)</option>
+            <option value="/assets/audio/Pokemon FireRedLeafGreen- Surf Theme.mp3">Surf Theme (FR/LG)</option>
+            <option value="/assets/audio/Pokemon FireRedLeafGreen- S.S. Anne.mp3">S.S Anne  (FR/LG)</option>
+            <option value="/assets/audio/Pokemon FireRedLeafGreen- Cinnabar Island.mp3">Cinnabar Island (FR/LG)</option>
+            <option value="/assets/audio/Lavender Town (Original Japanese Version from Pokemon Red and Green).mp3">Lavender Town (R/G)</option>
+            <option value="/assets/audio/Pokémon Diamond, Pearl & Platinum - Champion Cynthia Battle Music (HQ).mp3">Cynthia's Piano (D/P)</option>
+        </select>
+        <audio id="backgroundMusic" controls hidden></audio>
         </nav>
       </div>
     </head>
@@ -61,6 +72,8 @@
           </p>
         </div>
       </div>
+      <script src="/code/js/background-music.js"></script>
+
     </body>
   </html>
 </html>

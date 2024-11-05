@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <div class="fonts">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet"
+      />
     </div>
     <script src="/code/js/sidebar.js"></script>
     <link rel="stylesheet" href="/code/css/styles.css" />
@@ -13,20 +16,36 @@
     <title>POKEDEX</title>
     <div>
       <nav>
-         <ul class="nav-list">
+        <ul class="nav-list">
           <li>
-           <a href="/code/html/home.html"><h2 class="nunito nav-element">HOME</h2></a> 
+            <a href="/code/html/home.html"
+              ><h2 class="nunito nav-element">HOME</h2></a
+            >
           </li>
           <li>
-           <a href="/code/html/pokedex.html"><h2 class="nunito nav-element">POKEDEX</h2></a> 
+            <a href="/code/html/pokedex.html"
+              ><h2 class="nunito nav-element">POKEDEX</h2></a
+            >
           </li>
           <li>
-            <a href="/code/html/about.html"><h2 class="nunito nav-element">ABOUT</h2></a>
+            <a href="/code/html/about.html"
+              ><h2 class="nunito nav-element">ABOUT</h2></a
+            >
           </li>
-         </ul>
+        </ul>
+        <select id="musicDropdown" onchange="playMusic()">
+          <option value="">No Music</option>
+          <option value="/assets/audio/Pokemon- Heart Gold and Soul Silver- Route 1- Music.mp3">Route 1 (HSGG)</option>
+          <option value="/assets/audio/Pokemon HGSS Music - Vermillion City.mp3">Vermelion City (HSGG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- Surf Theme.mp3">Surf Theme (FR/LG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- S.S. Anne.mp3">S.S Anne  (FR/LG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- Cinnabar Island.mp3">Cinnabar Island (FR/LG)</option>
+          <option value="/assets/audio/Lavender Town (Original Japanese Version from Pokemon Red and Green).mp3">Lavender Town (R/G)</option>
+          <option value="/assets/audio/Pokémon Diamond, Pearl & Platinum - Champion Cynthia Battle Music (HQ).mp3">Cynthia's Piano (D/P)</option>
+      </select>
+      <audio id="backgroundMusic" controls hidden></audio>
       </nav>
     </div>
-  </head>
   </head>
   <body>
     <div class="body-content body-content-pokecard">
@@ -38,7 +57,225 @@
           <h4><a href="/code/html/001.html">Bulbasaur</a></h4>
         </div>
       </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#2</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/ivysaur.png" alt="Ivysaur"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Ivysaur</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#3</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/venusaur.png" alt="Venusaur"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Venusaur</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#4</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/charmander.png" alt="Charmander"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Charmander</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#5</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/charmeleon.png" alt="Charmeleon"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Charmeleon</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#6</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/charizard.png" alt="Charizard"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Charizard</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#7</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/squirtle.png" alt="Squirtle"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Squirtle</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#8</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/wartortle.png" alt="Wartortle"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Wartortle</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#9</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/blastoise.png" alt="Blastoise"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Blastoise</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#10</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/caterpie.png" alt="Caterpie"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Caterpie</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#11</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/metapod.png" alt="Metapod"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Metapod</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#12</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/butterfree.png" alt="Butterfree"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Butterfree</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#13</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/weedle.png" alt="Weedle"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Weedle</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#14</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/kakuna.png" alt="Kakuna"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Kakuna</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#15</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/beedrill.png" alt="Beedrill"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Beedrill</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#16</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pidgey.png" alt="Pidgey"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Pidgey</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#17</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pidgeotto.png" alt="Pidgeotto"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Pidgeotto</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#18</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pidgeot.png" alt="Pidgeot"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Pidgeot</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#19</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/rattata.png" alt="Rattata"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Rattata</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#20</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/raticate.png" alt="Raticate"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Raticate</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#21</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/spearow.png" alt="Spearow"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Spearow</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#22</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/fearow.png" alt="Bulbasaur"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Fearow</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#23</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/ekans.png" alt="Ekans"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Ekans</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#24</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/arbok.png" alt="Arbok"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Arbok</a></h4>
+        </div>
+      </div>
+
+      <div class="pokecard">
+        <div>
+          <h4 class="body-content-pokecard-top">#25</h4> 
+          <a href="/code/html/001.html"><img src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/pikachu.png" alt="Pikachu"></a>
+          <!-- FOR THE pics OFF monSS -->
+          <h4><a href="/code/html/001.html">Pikachu</a></h4>
+        </div>
+      </div>
     </div>
     <script src="/code/js/themechanger.js"></script>
+    <script src="/code/js/background-music.js"></script>
+
   </body>
 </html>

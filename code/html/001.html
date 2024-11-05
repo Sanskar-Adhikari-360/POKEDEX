@@ -35,6 +35,17 @@
             >
           </li>
         </ul>
+        <select id="musicDropdown" onchange="playMusic()">
+          <option value="">No Music</option>
+          <option value="/assets/audio/Pokemon- Heart Gold and Soul Silver- Route 1- Music.mp3">Route 1 (HSGG)</option>
+          <option value="/assets/audio/Pokemon HGSS Music - Vermillion City.mp3">Vermelion City (HSGG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- Surf Theme.mp3">Surf Theme (FR/LG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- S.S. Anne.mp3">S.S Anne  (FR/LG)</option>
+          <option value="/assets/audio/Pokemon FireRedLeafGreen- Cinnabar Island.mp3">Cinnabar Island (FR/LG)</option>
+          <option value="/assets/audio/Lavender Town (Original Japanese Version from Pokemon Red and Green).mp3">Lavender Town (R/G)</option>
+          <option value="/assets/audio/Pokémon Diamond, Pearl & Platinum - Champion Cynthia Battle Music (HQ).mp3">Cynthia's Piano (D/P)</option>
+      </select>
+      <audio id="backgroundMusic" controls hidden></audio>
       </nav>
     </div>
   </head>
@@ -42,16 +53,22 @@
     <div class="body-content-details body-content">
       <div class="body-content-details-container">
         <div class="head-name-mons nunito">
-          <div class="left-name"><b>◄ </b> 151 <b>Mew</b></div>
+          <div class="left-name"><a href="151.html"><b>◄ </b> 151 <b>Mew</b></a></div>
           <div class="middle-name"><b>Kanto Pokedex</b></div>
-          <div class="right-name">002 <b>Ivysaur ►</b></div>
+          <div class="right-name"><a href="/code/html/002.html">002 <b>Ivysaur ►</b></a></div>
         </div>
         <div class="body-content-details-body-pic">
           <img src="/assets/images/01.png" />
         </div>
         <div class="body-content-details-body">
-          001 <strong class="nunito">Bulbasaur</strong>
+          <div class="body-content-details-body-mon-info">
           <table>
+            <tr>
+              <th><b>Name:</b></th>
+              <td>
+                Bulbasaur
+              </td>
+            </tr>
             <tr>
               <th><b>Type:</b></th>
               <td>
@@ -84,6 +101,7 @@
             </tr>
           </table>
         </div>
+        </div>
         <div class="body-content-details-right">
           <div class="base-stats">
             <b class="nunito">Base Stats</b>
@@ -93,8 +111,7 @@
             <br />
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">HP</div>
-                <div class="stat-value"><b>45</b></div>
+                <div class="stat-name">HP : <b class="stat-value">45</b></div>
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 45px"></div>
@@ -102,8 +119,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Attack</div>
-                <div class="stat-value"><b>49</b></div>
+                <div class="stat-name">Attack : <b class="stat-value">49</b></div>
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 49px"></div>
@@ -111,8 +127,8 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Defense</div>
-                <div class="stat-value"><b>49</b></div>
+                <div class="stat-name">Defense : <b class="stat-value">49</b></div>
+                
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 49px"></div>
@@ -120,8 +136,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Special Attack</div>
-                <div class="stat-value"><b>65</b></div>
+                <div class="stat-name">Special Attack : <b class="stat-value">65</b></div>
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 65px"></div>
@@ -129,8 +144,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Special Defense</div>
-                <div class="stat-value"><b>65</b></div>
+                <div class="stat-name">Special Defense <b class="stat-value">65</b></div>
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 65px"></div>
@@ -138,8 +152,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Speed</div>
-                <div class="stat-value"><b>45</b></div>
+                <div class="stat-name">Speed <b class="stat-value">45</b></div>
               </div>
               <div class="stat-bar">
                 <div class="stat-fill" style="width: 45px"></div>
@@ -155,8 +168,7 @@
             <br />
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">HP</div>
-                <div class="stat-value"><b>294</b></div>
+                <div class="stat-name">HP : <b class="stat-value">294</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -167,8 +179,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Attack</div>
-                <div class="stat-value"><b>216</b></div>
+                <div class="stat-name">Attack : <b class="stat-value">216</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -179,8 +190,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Defense</div>
-                <div class="stat-value"><b>216</b></div>
+                <div class="stat-name">Defense : <b class="stat-value">216</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -191,8 +201,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Special Attack</div>
-                <div class="stat-value"><b>251</b></div>
+                <div class="stat-name">Special Attack : <b class="stat-value">251</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -203,8 +212,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Special Defense</div>
-                <div class="stat-value"><b>251</b></div>
+                <div class="stat-name">Special Defense : <b class="stat-value">251</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -215,8 +223,7 @@
             </div>
             <div class="stat">
               <div class="stat-info">
-                <div class="stat-name">Speed</div>
-                <div class="stat-value"><b>207</b></div>
+                <div class="stat-name">Speed : <b class="stat-value">207</b></div>
               </div>
               <div class="stat-bar">
                 <div
@@ -229,12 +236,12 @@
 
           <div class="body-content-details-right-more-details">
             <ul class="body-content-details-right-more-details-nav">
+              <li>Strong Defense</li>
+              <li>Weak Defense</li>
               <li>Dex entries</li>
-              <li>Defense</li>
-              <li>Location</li>
             </ul>
             <div class="body-content-details-right-more-details-defense">
-              <!-- <b class="nunito">Strong Defense</b>
+              <!-- <b class="nunito">Strong Defense</b>2
               <p>Types not efeective against Bulbasaur</p>
               <div>
                   <ul class="defense-multiplier">
@@ -347,5 +354,7 @@
       </div>
     </div>
     <script src="/code/js/more-info.js"></script>
+    <script src="/code/js/background-music.js"></script>
+
   </body>
 </html>
