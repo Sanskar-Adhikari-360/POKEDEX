@@ -201,18 +201,33 @@ body::-webkit-scrollbar-track {
 }
 
 .pokecard img {
-  width: 100%;
+  
   object-fit: contain;
-  margin-top: -45px;
+  align-items: center;
   /* border-radius: 5px; */
 }
 
 .pokecard h4 {
   font-size: 16px;
   margin-top: -10px;
+  margin-bottom: 2px;
 }
 .body-content-pokecard-top {
   float: left;
+}
+
+.card-tag-container{
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+}
+
+.card-tag{
+  text-align: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 8px;
+  border-radius: 16px;
 }
 
 .toggle {
